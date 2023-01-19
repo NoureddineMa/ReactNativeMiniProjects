@@ -46,7 +46,7 @@ export default function App() {
       <KeyboardAvoidingView
         behavior={Platform.OS === "ios" ? "padding" : "height"}
         style={styles.writeTaskWrapper}>
-        <TextInput style={styles.input} placeholder={'Write a Task'} value={task} onChangeText={text => setTask(text)} />
+        <TextInput style={styles.input} placeholder={'Write a Task ...'} value={task} onChangeText={text => setTask(text)} />
         <TouchableOpacity onPress={() => {handleAddTask()}}>
           <View style={styles.addWrapper}>
             <Text style={styles.addText}>+</Text>
@@ -88,21 +88,19 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
     backgroundColor: 'white',
     borderRadius: 60,
-    borderColor: '#C0C0C0',
-    borderWidth: 1,
+
     width: 250,
   },
   addWrapper: {
-    width: 60,
-    height: 60,
-    backgroundColor: 'white',
-    borderRadius: 60,
+    width: 40,
+    height: 40,
+    backgroundColor: '#FFB100',
+    color: 'white',
+    borderRadius: 30,
     justifyContent: 'center',
     alignItems: 'center',
-    borderColor: '#C0C0C0',
-    borderWidth: 1,
   },
   addText: {
-
+  
   }
 });

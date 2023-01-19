@@ -29,7 +29,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         flexWrap: 'wrap',
-
     },
     square: {
      width: 24,
